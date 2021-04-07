@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+  <div id="container">
+    <!-- header -->
+    <header class="header">
+      <h1 class='heading'>my books library</h1>
+      <button class='btn add-form-btn'>Add new book</button>
+      <!-- form container -->
+      <div class="form-container scale-0">
+        <form class="form">
+          <div class='input title'>
+            <label for="book-title">Ime knjige:</label>
+            <input placeholder='title' class='book-title' type="text">
+          </div>
+          <div class='input author'>
+            <label for="book-author">Autor:</label>
+            <input placeholder="author" class='book-author' type="text">
+          </div>
+          <div class="input pages">
+            <label for="pages">Broj strana:</label>
+            <input placeholder="pages" class='pages-number' type="number">
+          </div>
+          <button class='btn add-book-btn' type='button'>add book</button>
+        </form>
+      </div>
+      <!-- form container end -->
+    </header>
+    <!-- header wend -->
+    <div class="content">
+      <!-- books go here -->
+    </div>
+  </div>
+  <!-- <script src="./script.js"></script> -->
+  <!-- <script src="./app.js"></script> -->
+  <script src="./books.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu';
+}
+body {
+  height: 100vh;
+}
+
+p {
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+header {
+  background: transparent;
+}
+.content {
+  padding: 2rem;
+  display: grid;
+  /* margin: 0 auto; */
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+.container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.heading {
+  /* text-align: center; */
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.book {
+  display: grid;
+  place-items: center;
+  background-color: #444;
+  border: 1px solid black;
+  color: #f1f1f1;
+  margin: 1rem;
+  padding: 5px 0px 0 5px;
+  min-height: 350px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px 1px #888;
+  min-width: 250px;
+  /* animation: slide-up 0.4s ease; */
+}
+.book-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.position {
+  transform: translateX(0);
+}
+.header {
+  padding: 1rem;
+  text-align: center;
+}
+#read {
+  height: 20px;
+  width: 20px;
+}
+.btn {
+  background: black;
+  border: 1px solid #444;
+  color: #444;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.hidden {
+  visibility: hidden;
+}
+.show {
+  visibility: visible;
+}
+.display-none {
+  display: none;
+}
+
+.scale-0 {
+  transform: scale(0);
+  transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s;
+}
+.scale-1 {
+  transform: scale(1);
+}
+
+.form-container {
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 80px;
+  align-items: center;
+}
+.input {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: 1px solid #444;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+label {
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 800px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
